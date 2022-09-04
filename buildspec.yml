@@ -59,3 +59,5 @@ commands:
 env:
   parameter-store:         
     JWT_SECRET:JWT_SECRET
+    JWT_SECRET:JWT_SECRET
+     
