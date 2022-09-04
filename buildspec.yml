@@ -58,5 +58,5 @@ commands:
   - python -m pytest test_main.py
 env:
   parameter-store:         
-    JWT_SECRET: JWT_SECRET
+    JWT_SECRET: 
      
