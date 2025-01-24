@@ -12,3 +12,17 @@ managed_services:
           - container_name: "Container2"
             partition_key: "/partition_key"
             other_properties: "Other properties"
+---
+managed_services:
+  cosmosdb_sql:
+    name: "NameoftheCosmosDB-Account"
+    other_properties: "Other properties"
+database:
+  db_name: "Database2"
+  containers:
+    - container_name: "Container3"
+      partition_key: "/partition_key"
+      other_properties: "Other properties"
+    - container_name: "Container4"
+      partition_key: "/partition_key"
+      other_properties: "Other properties"
