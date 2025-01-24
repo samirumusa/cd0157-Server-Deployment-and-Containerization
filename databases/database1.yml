@@ -13,6 +13,7 @@ managed_services:
             partition_key: "/partition_key"
             other_properties: "Other properties"
 ---
+team_id: "Unique Team ID"
 managed_services:
   cosmosdb_sql:
     name: "NameoftheCosmosDB-Account"
