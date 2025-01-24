@@ -12,6 +12,9 @@ managed_services:
           - container_name: "Container2"
             partition_key: "/partition_key"
             other_properties: "Other properties"
+          - container_name: "Container4"
+            partition_key: "/partition_key"
+            other_properties: "Other properties"
 ---
 team_id: "Unique Team ID"
 managed_services:
