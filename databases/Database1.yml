@@ -12,11 +12,3 @@ managed_services:
           - container_name: "Container2"
             partition_key: "/partition_key"
             other_properties: "Other properties"
-      - db_name: "Database2"
-        containers:
-          - container_name: "Container3"
-            partition_key: "/partition_key"
-            other_properties: "Other properties"
-          - container_name: "Container4"
-            partition_key: "/partition_key"
-            other_properties: "Other properties"
