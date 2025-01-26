@@ -1,3 +1,4 @@
+team_id: "Unique Team ID"
 managed_services:
   cosmosdb_sql:
     name: "NameoftheCosmosDB-Account"
