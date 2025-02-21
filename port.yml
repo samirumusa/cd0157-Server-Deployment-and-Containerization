@@ -7,12 +7,3 @@
     repo: https://github.com/port-labs/github-app-setup-example
     slack-channel: prod-alerts
     grafana: https://play.grafana.org/d/000000012/grafana-play-home
-- identifier: example22
-  title: null
-  blueprint: Microservice
-  properties: 
-    owner: null
-    runtime: null
-    repo: null
-    slack-channel: null
-    grafana: null
