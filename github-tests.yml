@@ -1,7 +1,10 @@
-- "key":"node"
-  "value":"1.00"
-- "key":"python"
-  "value":"1.00"
-- "key":"java"
-  "value":"1.00"
+- identifier: example444
+  title: Example444
+  blueprint: microservice
+  properties: 
+    owner: port-labs
+    runtime: NodeJs
+    repo: https://github.com/port-labs/github-app-setup-example
+    slack-channel: prod-alerts
+    grafana: https://play.grafana.org/d/000000012/grafana-play-home
 
