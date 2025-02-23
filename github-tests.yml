@@ -1,3 +1,7 @@
-"node": "1.00"
-"python": "1.00"
-"javascripts": "2.00"
+- "key":"node"
+  "value":"1.00"
+- "key":"python"
+  "value":"1.00"
+- "key":"java"
+  "value":"1.00"
+
