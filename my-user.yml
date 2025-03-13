@@ -6,7 +6,7 @@
         moderated_blueprints: []
         status: Invited"
   relations: {}
-  - identifier: "samiruh+org_532074527@getport.ioue"
+- identifier: "samiruh+org_532074527@getport.ioue"
     title: "cd0157-Server-Deployment-and-Containerizatiofddn"
     properties:
           port_type: "Standard"
