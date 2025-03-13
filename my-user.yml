@@ -1,8 +1,8 @@
-identifier: "samiruh+org_532074527@getport.io"
-title: "cd0157-Server-Deployment-and-Containerization"
-properties:
-    port_type: "Standard"
-    port_role: "Member"
-    moderated_blueprints: []
-    status: Invited"
-relations: {}
+- identifier: "samiruh+org_532074527@getport.io"
+  title: "cd0157-Server-Deployment-and-Containerization"
+  properties:
+        port_type: "Standard"
+        port_role: "Member"
+        moderated_blueprints: []
+        status: Invited"
+  relations: {}
