@@ -1,27 +1,20 @@
 name: Kafka Workflow
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */1 * * *'
+    workflow_dispatch:
+    schedule:
+        - cron: '0 */1 * * *' # Determines the scheduled interval for this workflow. This example runs every hour.
 
 jobs:
-  run-integration:
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-
-    steps:
-      - name: Decode Base64 secret to a variable (JSON string, escaped)
-        id: decode_config
-        run: |
-          decoded=$(echo "${{ secrets.clusterConfMapping }}" | base64 --decode | jq -c .)
-          echo "config=$decoded" >> $GITHUB_OUTPUT
-
-      - name: Run Kafka Integration
-        uses: port-labs/ocean-sail@v1
-        with:
-          type: kafka
-          port_client_id: ${{ secrets.PORT_CLIENT_ID }}
-          port_client_secret: ${{ secrets.PORT_CLIENT_SECRET }}
-          port_base_url: "https://api.port.io"
-          config: |
-            cluster_conf_mapping: ${{ steps.decode_config.outputs.config }}
+    run-integration:
+      runs-on: ubuntu-latest
+      timeout-minutes: 30 # Set a time limit for the job
+      steps:
+          - name: Run kafka Integration
+            uses: port-labs/ocean-sail@v1
+            with:
+              type: kafka
+              port_client_id: ${{ secrets.PORT_CLIENT_ID }}
+              port_client_secret: ${{ secrets.PORT_CLIENT_SECRET }}
+              port_base_url: "https://api.port.io"
+              config: |
+                  cluster_conf_mapping: ${{ secrets.clusterConfMapping }}
