@@ -1,4 +1,4 @@
-name: kAFKA Workflow
+name: Kafka Workflow
 on:
   workflow_dispatch:
   schedule:
@@ -10,14 +10,12 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - name: Decode Base64 secret to a variable (Python dict)
+      - name: Decode Base64 secret to a variable (JSON string, escaped)
         id: decode_config
         run: |
-          decoded=$(echo "${{ secrets.clusterConfMapping }}" | base64 --decode)
-          echo $decoded
-          # Remove newlines if needed
-          clean_decoded=$(echo "$decoded" | tr -d '\n')
-          echo "config=$clean_decoded" >> $GITHUB_OUTPUT
+          decoded=$(echo "${{ secrets.clusterConfMapping }}" | base64 --decode | jq -c .)
+          echo "config=$decoded" >> $GITHUB_OUTPUT
+
       - name: Run Kafka Integration
         uses: port-labs/ocean-sail@v1
         with:
