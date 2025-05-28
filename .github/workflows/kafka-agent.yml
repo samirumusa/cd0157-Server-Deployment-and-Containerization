@@ -14,7 +14,7 @@ jobs:
         id: decode_config
         run: |
           decoded=$(echo "${{ secrets.clusterConfMapping }}" | base64 --decode)
-          echo decoded
+          echo $decoded
           # Remove newlines if needed
           clean_decoded=$(echo "$decoded" | tr -d '\n')
           echo "config=$clean_decoded" >> $GITHUB_OUTPUT
