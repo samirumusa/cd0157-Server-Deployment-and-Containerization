@@ -8,7 +8,7 @@
     slack-channel: prod-alerts
     grafana: https://play.grafana.org/d/000000012/grafana-play-home
   relations:
-     vma: myDomain
+     vma: myDomains
 - identifier: example67
   title: Example678
   blueprint: Microservice
