@@ -1,4 +1,20 @@
-test1
-test2
-test
-test3
+- identifier: example77789
+  title: Example7789
+  blueprint: Microservice
+  properties: 
+    owner: port-labs
+    runtime: NodeJs
+    repo: https://github.com/port-labs/github-app-setup-example
+    slack-channel: prod-alerts
+    grafana: https://play.grafana.org/d/000000012/grafana-play-home
+  relations:
+     vma: myDomains
+- identifier: example67
+  title: Example678
+  blueprint: Microservice
+  properties: 
+    owner: port-labs
+    runtime: NodeJs
+    repo: https://github.com/port-labs/github-app-setup-example
+    slack-channel: prod-alerts
+    grafana: https://play.grafana.org/d/000000012/grafana-play-home
