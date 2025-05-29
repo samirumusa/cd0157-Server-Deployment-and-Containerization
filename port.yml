@@ -6,7 +6,7 @@
     runtime: NodeJs
     repo: https://github.com/port-labs/github-app-setup-example
     slack-channel: prod-alerts
-    grafana: https://play.grafana.org/d/000000012/grafana-play-home
+    grafana: https://play.grafana.org/d/000000012/grafana-play-hme
   relations:
      vma: myDomains
 - identifier: example67
