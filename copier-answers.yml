@@ -1,1 +1,29 @@
-
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# This file stores the inputs provided when bootstrapping a service. The answers are used to render the bootstrap templates.
+# Link to templates: https://github.com/epidemicsound/bootstrap-service-templates
+# Docs: https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+#test
+_commit: app-repo-v1.9.0
+_src_path: https://github.com/epidemicsound/bootstrap-service-templates.git
+app_framework: go-template
+app_framework_template_ver: go-template-v1.5.0
+app_name: promote-golang-app
+app_name_dash: promote-golang-app
+app_name_snake: promote_golang_app
+app_name_snake_upper: PROMOTE_GOLANG_APP
+app_repo_template_ver: app-repo-v1.9.0
+argocd_apps_template_ver: argocd-apps-v1.2.0
+enable_database: false
+enable_iap: false
+gcp_group: sre-infra
+gha_workflow_ver: workflows-v1.3.0
+github_team: sre-infrastructure
+infra_template_ver: infra-v1.0.2
+internal_port: 8081
+lifecycle: production
+namespace: promote-service-templates-demo
+public_port: 8080
+publicly_exposed: false
+slack_channel: bootstrap-service-template-alerts
+template: app-repo
+test12: test124455
