@@ -12,7 +12,7 @@ app_name_dash: promote-golang-app
 app_name_snake: promote_golang_app
 app_name_snake_upper: PROMOTE_GOLANG_APP
 app_repo_template_ver: app-repo-v1.9.0
-argocd_apps_template_ver: argocd-apps-v1.2.0
+argocd_apps_template_ver: argocd-apps-v1.2.00
 enable_database: false
 enable_iap: false
 gcp_group: sre-infra
