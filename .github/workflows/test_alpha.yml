@@ -1,0 +1,36 @@
+name: Manual CI Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to run the workflow"
+        required: true
+        default: "dev"
+      run_tests:
+        description: "Run tests?"
+        required: true
+        default: "true"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print inputs
+        run: |
+          echo "Environment: ${{ github.event.inputs.environment }}"
+          echo "Run tests: ${{ github.event.inputs.run_tests }}"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests (optional)
+        if: ${{ github.event.inputs.run_tests == 'true' }}
+        run: npm test
+
+      - name: Build project
+        run: npm run build
